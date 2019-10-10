@@ -1,0 +1,27 @@
+@font-face{
+    /*Nombre de fuente*/
+    font-family: "Roboto";
+
+    src:url('./fonts/Roboto-Regular.ttf') format('truetype');
+
+    font-weight: 400;
+}
+
+body{
+    /*Nombre de fuente*/
+    font-family: "Roboto";
+}
+
+@font-face{
+    font-family: "Roboto";
+    src:url('./fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+
+h1{
+    font-family: 'Roboto';
+}
+

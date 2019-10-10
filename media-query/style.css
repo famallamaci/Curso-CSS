@@ -1,0 +1,44 @@
+/* Desktop first
+h1{
+    font-size: 80px;
+    color: blue;
+}
+
+p {
+    font-size: 32px;
+    background-color: yellow;
+    color: red;
+}
+
+/*cambia los estilos a partir de un tamano maximo de pantalla
+@media (max-width: 1024px) {
+    h1{
+        font-size: 40px;
+        color:red;
+    }
+
+}
+*/
+
+/*Mobile first: de mas chico a mas grande, recomendable*/
+h1{
+    font-size: 40px;
+    color:red;
+}
+
+p{
+    color:white;
+    background-color: black;
+}
+
+@media (min-width: 1024) {
+    h1{
+        font-size: 80px;
+        color: yellow;
+    }
+    
+    p{
+        color:white;
+        background-color: black;
+    }
+}

@@ -1,0 +1,138 @@
+div{
+    display: inline-block;
+    padding: 20px;
+    background-color: orange;
+    color:white;
+    cursor:default;
+    margin-bottom: 20px;
+}
+
+.transicion:hover {
+    background-color: blue;
+    transition-duration: 2s;
+
+}
+
+.rotate:hover{
+    transition: all 2s linear;
+    transform: rotate (90deg);
+}
+
+.scale:hover{
+    transition: all 2s linear;
+    transform: scale (0.5);
+}
+
+.keyframe{
+animation-name: rotate;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(300deg);
+    }
+}
+
+.shake {
+    animation-name: shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes shake {
+
+    0% {
+        transform: rotate(0deg);
+    
+    }
+    10% {
+        transform: rotate(20deg);
+    
+    }
+    20% {
+        transform: rotate(-20deg);
+    
+    }
+    30% {
+        transform: rotate(20deg);
+    
+    }
+    40% {
+        transform: rotate(-20deg);
+    
+    }
+    50% {
+        transform: rotate(0deg);
+    
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.bounce{
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+    0% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cartel-roto{
+    animation-name: cartel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;  
+    transform-origin: 0 0;  
+}
+
+@keyframes cartel{
+    0% {
+        transform: rotate(0deg);
+    
+    }
+    10% {
+        transform: rotate(20deg);
+    
+    }
+    20% {
+        transform: rotate(-20deg);
+    
+    }
+    30% {
+        transform: rotate(20deg);
+    
+    }
+    40% {
+        transform: rotate(-20deg);
+    
+    }
+    50% {
+        transform: rotate(0deg);
+    
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
