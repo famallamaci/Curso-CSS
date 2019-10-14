@@ -1,27 +1,53 @@
-@font-face{
-    /*Nombre de fuente*/
-    font-family: "Roboto";
+@import url('../style.css');
 
-    src:url('./fonts/Roboto-Regular.ttf') format('truetype');
+@font-face{ /*Fuentes online*/
+    
+    font-family: "Raleway";
 
-    font-weight: 400;
-}
+    src:url('./fonts/Raleway-Regular-subset.ttf') format('truetype');
 
-body{
-    /*Nombre de fuente*/
-    font-family: "Roboto";
-}
-
-@font-face{
-    font-family: "Roboto";
-    src:url('./fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src:url('./fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
 
 
-h1{
-    font-family: 'Roboto';
+@font-face {
+    font-family: 'Raleway';
+    src:url('./fonts/Raleway-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+body{
+    font-family: "Raleway";
+}
+
+h1 {
+    font-weight: 700;
+}
+h2 {
+    font-weight: 400;
+    font-style: italic
+}
+h3 {
+    font-weight: 700;
+    font-style: italic
+}
+h4 {
+    font-weight: 100;
+}
+h5 {
+    font-weight: 100;
+}
+h6 {
+    font-weight: 200;
 }
 

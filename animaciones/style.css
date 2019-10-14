@@ -1,49 +1,53 @@
+@import url('../style.css');
+
 div{
     display: inline-block;
     padding: 20px;
-    background-color: orange;
-    color:white;
+    background-color: darkblue;
+    color: white;
     cursor:default;
+    margin-right: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .transicion:hover {
-    background-color: blue;
-    transition-duration: 2s;
+    background-color: goldenrod;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(.3,1.14,.74,1.23);
 
 }
 
-.rotate:hover{
+.rotate:hover {
     transition: all 2s linear;
-    transform: rotate (90deg);
+    transform: rotate(90deg);
 }
 
 .scale:hover{
     transition: all 2s linear;
-    transform: scale (0.5);
+    transform: scale(2);
 }
 
 .keyframe{
-animation-name: rotate;
-animation-duration: 2s;
+animation-name: Rotacion;
+animation-duration: 1.5s;
 animation-fill-mode: forwards;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
-
 }
 
-@keyframes rotate{
+@keyframes Rotacion{
     from {
         transform: rotate(0deg);
     }
     to{
-        transform: rotate(300deg);
+        transform: rotate(359deg);
     }
 }
 
 .shake {
     animation-name: shake;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 
 }
@@ -95,7 +99,7 @@ animation-timing-function: linear;
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(0.5);
     }
 }
 
@@ -136,3 +140,40 @@ animation-timing-function: linear;
     }
 }
 
+.reverse, .reverse2 {
+    animation-name: reverse;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.reverse2 {
+    animation-direction: reverse;
+}
+
+@keyframes reverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform:rotate(45deg);
+        background-color: blanchedalmond;
+    }
+}
+
+.shake2 {
+    animation-name: shake2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake2{
+  
+    10%,30%,50%,70%,90% {
+      transform: translate3d(-10px, 10px, 0);
+    }
+  
+    20%,40%,60%,80% {
+      transform: translate3d(10px, -10px, 0);
+    }
+  }
