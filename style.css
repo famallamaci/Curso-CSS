@@ -1,17 +1,37 @@
 @import url('./fuentes/style.css');
 
+:root {
+    --colorPrimario: midnightblue;
+    --colorSecundario: lightpink;
+}
+
+body{
+    background-color: #2B2B2B;
+    color: whitesmoke;
+}
+
+h1 {
+text-align: center;
+color: whitesmoke;
+}
+
 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     list-style: none;
-    padding: 0;
+    text-align: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+li{
+    background-color: var(--colorPrimario);
+    padding: 10px;
 }
 
 a{
-    display: inline-block;
-    padding: 10px;
-    background-color: midnightblue;
-    color: lightpink;
-    min-width: 150px;
+    color: var(--colorSecundario);
     text-align: center;
     text-decoration: none;
-    margin: 0 auto 15px auto;
 }

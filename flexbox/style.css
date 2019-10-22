@@ -1,0 +1,59 @@
+@import url('../style.css');
+
+body{
+    background-color: lightgray;
+}
+
+.contenedor {
+    height: 350px;
+    background-color: white;
+    border: 10px solid black;
+    display: flex;
+    flex-wrap: wrap; 
+    /*Elegir eje principal*/
+    flex-direction: row;
+    /*Alineacion en eje principal*/
+    justify-content: center;
+
+    /*Alineacion en el eje secundario
+    align-items: flex-start;
+
+    align-content: flex-start; */
+}
+
+.item {
+    margin: 5px;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    height: 50px;
+    flex-basis: 50px; /*tamańo en eje principal*/
+
+}
+
+.item:nth-of-type(2){
+    background-color: blue;
+    /* flex-grow: 2; 
+    flex-shrink: 2;
+    font-size: 40px; */
+    order: 1;
+    align-self: center;
+}
+
+.item:nth-of-type(1){
+    order: 3;
+}
+
+.item:nth-of-type(3){
+    order: 4;
+    align-self: flex-end;
+}
+
+.item:nth-of-type(5){
+    order: 3;
+}
+
+.item:nth-of-type(4){
+    order: 3;
+    align-self: stretch;
+}

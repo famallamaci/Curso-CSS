@@ -23,6 +23,10 @@ p {
 */
 
 /*Mobile first: de mas chico a mas grande, recomendable*/
+body{
+    background-color: darkslategray;
+    color: white;
+}
 h1{
     font-size: 40px;
     color:red;
@@ -35,13 +39,18 @@ p{
 }
 
 @media (min-width: 1024px) {
+    body{
+        background-color: whitesmoke;
+        color: darkblue;
+    }
     h1{
         font-size: 80px;
-        color: blue;
+        color: darkblue;
+        background-color: whitesmoke;
     }
     p{
-        color: black;
-        background-color: yellow;
+        color: whitesmoke;
+        background-color: darkblue;
         font-size: 15px;
     }
 }
