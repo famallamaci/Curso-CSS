@@ -1,8 +1,8 @@
 @import url('./fuentes/style.css');
 
 :root {
-    --colorPrimario: midnightblue;
-    --colorSecundario: lightpink;
+    --colorPrimario: #D6D123;
+    --colorSecundario: #3D3D3D;
 }
 
 body{
@@ -19,7 +19,6 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 5px 5px 5px 5px;
     list-style: none;
     text-align: center;
     align-items: flex-start;

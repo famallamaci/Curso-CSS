@@ -1,0 +1,49 @@
+@import url("../style.css");
+
+:root {
+    --coloruno: darkred;
+    --colordos: lightgreen;
+    --colorfuente: whitesmoke;
+    --paddingmobile: 16px;
+    --fzmobile: 16px;
+    --fzdesktop: 22px;
+    
+    --gapmobile: 20px;
+    --gapdesktop: 20px; 
+}
+
+div[class*='contenedor']{
+    padding: var(--paddingmobile);
+    margin: var(--gapmobile);
+}
+.contenedoruno {
+    background-color: var(--coloruno);
+}
+
+.contenedordos {
+    background-color: var(--colordos);
+}
+
+p {
+    color: var(--colorfuente);
+    font-size: var(--fzmobile);
+}
+
+@media (min-width: 768px) {
+    div[class*='contenedor']{
+        margin: var(--gapdesktop);
+    }
+
+    p{
+        font-size: var(--fzdesktop);
+    }
+
+    .contenedoruno{
+        background-color: var(--colordos);
+    }
+
+    .contenedordos {
+        background-color: var(--coloruno);
+    }
+
+    }

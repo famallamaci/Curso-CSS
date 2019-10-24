@@ -1,0 +1,14 @@
+@import url("../style.css");
+
+img{
+    width: 500px;
+    object-fit: cover;
+}
+
+@media (min-width:768px) {
+    img{
+        width:768px;
+        height: 350px;
+        object-fit: cover;
+    }
+}
