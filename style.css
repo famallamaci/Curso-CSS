@@ -1,7 +1,7 @@
 @import url('./fuentes/style.css');
 
 :root {
-    --colorPrimario: #D6D123;
+    --colorPrimario: #F3D242;
     --colorSecundario: #3D3D3D;
 }
 
@@ -28,6 +28,7 @@ ul {
 li{
     background-color: var(--colorPrimario);
     padding: 15px;
+    min-width: 100px;
     margin: 5px 5px 5px 5px;
 }
 
