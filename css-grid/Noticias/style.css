@@ -1,0 +1,84 @@
+@import url('../../style.css');
+
+header{
+    background-color: gray;
+    height: 80px;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    border: 5px solid white;
+}
+
+body{
+    background-color: white;
+}
+
+.superior {
+    background-color: darkgrey;
+    display: flex;
+    height: 100px;
+    width: 900px;
+    border: 5px solid white;
+}
+
+/* Grilla 1 es contenedora de grillas 2 y 3 */
+.grilla1 { 
+    display: grid;
+    grid-template-columns: 455px 455px;
+    height: 300px;
+}
+
+/* Grilla 2 es contenedora del lado izquierdo */
+.grilla2 {
+    display: grid;
+    grid-template-columns: 227px 228px;
+    background-color: darkgrey;
+}
+
+.grilla21 {
+    display: grid;
+    grid-template-rows: 150px 150px;
+}
+
+.grilla211{
+    border: 5px solid white;
+}
+
+
+.grilla22 {
+    border: 5px solid white;
+}
+
+/* Grilla 3 es contenedora del lado derecho */
+.grilla3 {
+    display: grid;
+    grid-template-rows: 150px 150px;
+    background-color: darkgrey;
+}
+
+.grilla31 {
+    border: 5px solid white;
+}
+
+.grilla321{
+    border: 5px solid white;  
+}
+
+.grilla32 {
+    display: grid;
+    grid-template-columns: 227px 228px;
+}
+
+/* Inferior */
+
+.inferior{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 110px;
+    width: 910px;
+    background-color: darkgrey;
+}
+
+.cuadrito{
+    border: 5px solid white;  
+}
