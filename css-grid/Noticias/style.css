@@ -1,72 +1,82 @@
 @import url('../../style.css');
 
-header{
-    background-color: gray;
-    height: 80px;
-    display: flex;
-    width: 900px;
-    justify-content: center;
-    border: 5px solid white;
+:root {
+    --width: 900px;
+    --bg: darkgrey
 }
 
 body{
     background-color: white;
 }
 
+header{
+    background-color: gray;
+    height: 80px;
+    display: flex;
+    width: var(--width);
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 .superior {
-    background-color: darkgrey;
+    background-color: var(--bg);
     display: flex;
     height: 100px;
-    width: 900px;
-    border: 5px solid white;
+    width: var(--width);
+    margin-bottom: 10px;
 }
 
 /* Grilla 1 es contenedora de grillas 2 y 3 */
 .grilla1 { 
     display: grid;
-    grid-template-columns: 455px 455px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
     height: 300px;
+    width: var(--width);
+    margin-bottom: 10px;
 }
 
 /* Grilla 2 es contenedora del lado izquierdo */
 .grilla2 {
     display: grid;
-    grid-template-columns: 227px 228px;
-    background-color: darkgrey;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 
 .grilla21 {
     display: grid;
-    grid-template-rows: 150px 150px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 
 .grilla211{
-    border: 5px solid white;
+    background-color: var(--bg);
 }
 
 
 .grilla22 {
-    border: 5px solid white;
+    background-color: var(--bg);
 }
 
 /* Grilla 3 es contenedora del lado derecho */
 .grilla3 {
     display: grid;
-    grid-template-rows: 150px 150px;
-    background-color: darkgrey;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 
 .grilla31 {
-    border: 5px solid white;
+    background-color: var(--bg);
 }
 
 .grilla321{
-    border: 5px solid white;  
+    background-color: var(--bg);  
 }
 
 .grilla32 {
     display: grid;
-    grid-template-columns: 227px 228px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 
 /* Inferior */
@@ -75,10 +85,10 @@ body{
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: 110px;
-    width: 910px;
-    background-color: darkgrey;
+    grid-gap: 10px;
+    width: var(--width);
 }
 
 .cuadrito{
-    border: 5px solid white;  
+    background-color: var(--bg);
 }
