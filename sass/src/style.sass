@@ -1,0 +1,21 @@
+$color: orange
+$landscape: 1024px
+    
+nav
+    +border-radius(50px)
+    a
+        text-decoration: none
+    &:hover
+        text-decoration: underline
+
+.contenedor
+    background-color: $color
+    padding: 10px
+    +border-radius
+    p 
+        color: blue
+
+@media (min-width: $landscape)
+    body
+        background: red
+    
