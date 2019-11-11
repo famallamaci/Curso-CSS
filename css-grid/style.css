@@ -6,7 +6,7 @@ background-color: whitesmoke;
 
 .contenedor {
     display: grid;
-    grid-template-columns: 200px 100px;
+    grid-template-columns: 200px 600px;
     color: black;
 }
 
